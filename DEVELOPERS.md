@@ -42,7 +42,7 @@ Some places for future improves are:
 <br> 1. More testing could be implemented e.g unit tests for AccountController + AccountService, integration tests and post deployment checks<br> 2. Database improvements to utilize EF Core's auto generated migration scripts for the future <br> 3. Logging system improvement to be something more powerful and maybe cloud based <br> 4. Caching system potentially? Might need to have a discussion around business requirements to see if caching could be helpful or not.<br>5. Potentially split the Database logic into another project so the WebApi project doesn't get too cluttered<br>6. Depending on how complex the system is going to be in the future we could pontetially add a GUID field as UserId and do some db re-indexing but this depends on future requirement
 
 ## 8. Validation Improvements
-Although I'm very familiar with setting up fluent validations, in the future we could spend some time implementing a validation layer for requests that come through instead of doing manual checks in the service layer. <br>
+Although I'm not too familiar with setting up fluent validations, in the future we could spend some time implementing a validation layer for requests that come through instead of doing manual checks in the service layer. <br>
 e.g
 ```
   public CreateUserRequestValidator()
