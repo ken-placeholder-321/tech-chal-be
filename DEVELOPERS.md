@@ -56,4 +56,4 @@ e.g
         }
 ```
 <br> we could even get really fancy and add in business logic too e.g <br> 
-`RuleFor(req => req.MonthlySalary - req.MonthlyExpense).GreaterThan(1000).WithMessage("Salary Expense requirement not met .....");
+`RuleFor(req => req.MonthlySalary - req.MonthlyExpense).GreaterThan(1000).WithMessage("Salary Expense requirement not met .....");`
