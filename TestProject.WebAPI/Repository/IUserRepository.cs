@@ -8,9 +8,7 @@ namespace TestProject.WebAPI.Repository
     {
         Task<User> FetchAsync(string email);
         Task<List<User>> FetchAllAsync();
-
         Task<bool> CheckIfUserExists(string email);
-
         Task<bool> CreateUser(User u);
     }
 }

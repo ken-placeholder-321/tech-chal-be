@@ -22,7 +22,6 @@ namespace TestProject.WebAPI.Controllers
 
         [HttpGet]
         [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [Route("list")]
         public async Task<ActionResult<ListAccountResponse>> GetAllAccounts()
         {
@@ -33,6 +32,7 @@ namespace TestProject.WebAPI.Controllers
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<ActionResult<CreateAccountResponse>> CreateAccount(CreateAccountRequest request)
         {
             var response = await _accountService.CreateAccount(request);
