@@ -1,5 +1,3 @@
-using System;
-
 namespace TestProject.WebAPI.Repository.Models
 {
     public class User

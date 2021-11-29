@@ -1,16 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 using Moq;
-using TestProject.WebAPI.Controllers;
 using TestProject.WebAPI.Dtos;
-using TestProject.WebAPI.Logger;
 using TestProject.WebAPI.Repository;
 using TestProject.WebAPI.Repository.Models;
 using TestProject.WebAPI.Services;
 using Xunit;
 
-namespace TestProject.Tests
+namespace TestProject.Tests.Unit
 {
 
     public class UserServiceTests
